@@ -1,0 +1,17 @@
+﻿@model Tuple<List<Employee>,List<Product>,Product,Category>
+
+
+@{
+    ViewBag.Title = "ListData";
+}
+
+
+<ul>
+
+    @foreach (Category item in Model.Item1)
+    {
+        <li>@item.CategoryName @item.CategoryID</li>
+    }
+</ul>
+
+

@@ -1,0 +1,21 @@
+﻿@model CategoryVM
+
+@{
+    ViewBag.Title = "TrueUsage";
+}
+
+
+<ul>
+    @foreach (Product item in Model.Products)
+    {
+        <li>@item.ProductID @item.ProductName </li>
+    }
+</ul>
+
+
+<ul>
+    @foreach (Supplier item in Model.Suppliers)
+    {
+        <li>@item.SupplierID @item.CompanyName</li>
+    }
+</ul>
